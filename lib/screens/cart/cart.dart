@@ -9,13 +9,13 @@ class Cart extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Your Cart"),
       ),
-      body: SingleChildScrollView(  // ✅ Add scrolling
+      body: SingleChildScrollView(  
         child: Padding(
           padding: const EdgeInsets.all(12.0),
           child: Column(
             children: [
 
-              // Header
+        
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -32,7 +32,7 @@ class Cart extends StatelessWidget {
               ),
               const SizedBox(height: 20),
 
-              // Cart Item 1
+           
               _buildCartItem(
                 image: 'assets/images/image 134 (1).png',
                 name: 'Sugar Free Gold',
@@ -42,7 +42,7 @@ class Cart extends StatelessWidget {
 
               const SizedBox(height: 10),
 
-              // Cart Item 2
+         
               _buildCartItem(
                 image: 'assets/images/image 135.png',
                 name: 'Sugar Free Natural',
@@ -52,7 +52,7 @@ class Cart extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              // Payment Summary
+            
               const Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
@@ -69,6 +69,16 @@ class Cart extends StatelessWidget {
               _buildSummaryRow("Shipping", "Rs. 10.00"),
               const Divider(),
               _buildSummaryRow("Total", "Rs. 38.00", isBold: true),
+              SizedBox(
+  width: 344,
+  height: 25,
+  child: ElevatedButton( style: ButtonStyle(
+    backgroundColor: WidgetStatePropertyAll(Colors.blue),
+    
+  ), onPressed: (){
+    Navigator.push(context, MaterialPageRoute(builder: (context)=> const Cart()));
+  }, child: Text("Place an order")),
+),
             ],
           ),
         ),
@@ -76,7 +86,7 @@ class Cart extends StatelessWidget {
     );
   }
 
-  // ✅ Reusable widget for cart item
+ 
   Widget _buildCartItem({
     required String image,
     required String name,
@@ -135,14 +145,18 @@ class Cart extends StatelessWidget {
                   ],
                 ),
               ],
+              
             ),
+            
           ),
+          
         ],
       ),
+      
     );
   }
 
-  // ✅ Quantity button
+
   Widget _quantityButton(IconData icon) {
     return Container(
       padding: const EdgeInsets.all(4),
@@ -154,7 +168,7 @@ class Cart extends StatelessWidget {
     );
   }
 
-  // ✅ Payment Summary Row
+
   Widget _buildSummaryRow(String label, String value, {bool isBold = false}) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4.0),
