@@ -11,6 +11,7 @@ class Walkthrough extends StatelessWidget {
       backgroundColor: Colors.white,
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
 
           children: [
             Image(image: AssetImage('assets/images/walkthrough.png')),

@@ -125,12 +125,12 @@ Row(
 ),
 
 Text("Product Detail"),
-Container(
+SizedBox(
   width: 300,
   height: 150,
   child: Text("Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi ut nisi odio. Nulla facilisi.Nunc risus massa, gravida id egestas a, pretium vel tellus. Praesent feugiat diam sit amet pulvinar finibus. Etiam et nisi aliquet, accumsan nisi sit.")),
 Text("Ingredients"),
-Container(
+SizedBox(
    width: 300,
   height: 150,
   child: Text("Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi ut nisi odio. Nulla facilisi.Nunc risus massa, gravida id egestas a, pretium vel tellus. Praesent feugiat diam sit amet pulvinar finibus. Etiam et nisi aliquet, accumsan nisi sit.")),
@@ -153,7 +153,7 @@ Row(
   ],
 ),
 Image(image: AssetImage('assets/images/feedback_section.png')),
-Container(
+SizedBox(
   width: 344,
   height: 25,
   child: ElevatedButton( style: ButtonStyle(

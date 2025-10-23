@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:medicalapp/screens/walkthrough/walkthrough.dart';
 
@@ -33,7 +32,7 @@ class _SplishScreenState extends State<SplishScreen> {
         
            width: 200,
            height: 100,
-            child: CircleAvatar(child: Image(image:AssetImage('assets/images/vector.png')))),
+            child: CircleAvatar(child: Image(image:AssetImage('assets/images/Vector.png')))),
           Center(
             child: Text(
               "Quick Medical",

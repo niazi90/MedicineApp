@@ -16,7 +16,7 @@ body: Column(
     ),
     ListTile(
       leading: CircleAvatar(
-        backgroundColor: Colors.orange,
+        backgroundImage: AssetImage('assets/images/navbar.png'),
       ),title: Text("Hi, Azhar Iqbal"),
       subtitle: Text("Wellcome to Quick Medical Store"),
     ),
